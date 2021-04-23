@@ -1,0 +1,79 @@
+
+.app1-enter {
+    /*初始透明度为0*/
+    opacity: 0;
+    /*初始偏移量为100%*/
+    transform: translateX(100%);
+}
+
+.app1-enter-active {
+    /*随后透明度为1*/
+    opacity: 1;
+    /*随后偏移量回归原位*/
+    transform: translateX(0);
+    /*这个移动过程我们做个动画，动画持续时长500毫秒*/
+    transition: all 500ms ease;
+}
+
+.app1-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.app1-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 500ms ease;
+}
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+    left: 100% !important;
+  }
+  
+  .fade-enter.fade-enter-active {
+    opacity: 1;
+    left: 0 !important;
+    transition: all 300ms ease-in;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    /* transition: opacity 300ms, transform 300ms; */
+  }
+
+  .page-enter {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  
+  .page-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 300ms, transform 300ms;
+  }
+  
+  .page-exit {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .page-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+  }
+
+
+
+
+
+
+
+
