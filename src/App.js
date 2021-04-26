@@ -1,6 +1,6 @@
 import React, { Component, lazy } from 'react'
 import { Suspense } from 'react'
-import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
+import { HashRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
 import Loading from './components/Loading'
 
 const AdminRoute = lazy(() => import('./adminRoute')) 
@@ -22,7 +22,7 @@ class App extends Component {
                     <Route path="/login" component={Login} />
                     <Route path="/setting" component={Setting} />
                     <Route path="/admin" component={AdminRoute} />
-                    <Redirect to="/login" />
+                    <Redirect to="/admin" />
                   </Switch> 
                 <Robot/>
               </div>

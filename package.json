@@ -1,7 +1,7 @@
 {
   "name": "react-kitchen",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "./",
   "dependencies": {
     "@alifd/next": "^1.22.14",
